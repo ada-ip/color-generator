@@ -68,3 +68,17 @@ body {
 	border-top-right-radius: 5px;
 	border-bottom-right-radius: 5px;
 }
+
+.color-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	grid-auto-rows: 300px;
+}
+
+.color-grid-color {
+	padding: 2rem;
+}
+
+.color-grid-color p {
+	margin-bottom: 0.7rem;
+}
