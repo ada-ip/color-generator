@@ -10,8 +10,10 @@ function App() {
 
 	return (
 		<main>
-			<Title />
-			<Form setColors={setColors} />
+			<div className="header">
+				<Title />
+				<Form setColors={setColors} />
+			</div>
 			<ColorGrid colors={colors} />
 		</main>
 	);
