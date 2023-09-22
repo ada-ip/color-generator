@@ -1,0 +1,63 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--bground-color: #f8fafc;
+	--purple-bground-color: #645cff;
+	--text-color: #0f172a;
+	--light-text-color: #94a3b8;
+	--white: #ffffff;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+body {
+	background-color: var(--bground-color);
+	font-family: "Roboto", sans-serif;
+	color: var(--text-color);
+	letter-spacing: 0.05rem;
+}
+
+.color-form {
+	display: flex;
+}
+
+.color-form-color-input,
+.color-form-txt-input,
+.color-form-btn {
+	border: none;
+}
+
+.color-form-color-input:focus,
+.color-form-txt-input:focus,
+.color-form-btn:focus {
+	outline: 2px solid #bbb;
+}
+
+.color-form-color-input {
+	width: 50px;
+	height: 45px;
+	background: none;
+	cursor: pointer;
+}
+
+.color-form-txt-input {
+	padding-inline: 1em;
+	color: var(--light-text-color);
+	font-size: 1.1rem;
+	letter-spacing: 0.05rem;
+}
+
+.color-form-btn {
+	padding-inline: 1rem;
+	color: var(--white);
+	letter-spacing: 0.05rem;
+	cursor: pointer;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}

@@ -1,7 +1,13 @@
 import Title from "./components/Title.jsx";
+import Form from "./components/Form.jsx";
 
 function App() {
-	return <Title />;
+	return (
+		<main>
+			<Title />
+			<Form />
+		</main>
+	);
 }
 
 export default App;
