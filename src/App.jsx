@@ -1,5 +1,7 @@
+import Title from "./components/Title.jsx";
+
 function App() {
-	return <h1>Color Generator</h1>;
+	return <Title />;
 }
 
 export default App;
