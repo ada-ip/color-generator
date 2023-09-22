@@ -23,6 +23,14 @@ body {
 	letter-spacing: 0.05rem;
 }
 
+.text-dark {
+	color: var(--text-color);
+}
+
+.text-light {
+	color: var(--white);
+}
+
 .color-form {
 	display: flex;
 }
@@ -55,7 +63,6 @@ body {
 
 .color-form-btn {
 	padding-inline: 1rem;
-	color: var(--white);
 	letter-spacing: 0.05rem;
 	cursor: pointer;
 	border-top-right-radius: 5px;

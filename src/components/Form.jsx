@@ -1,5 +1,7 @@
 import { useState } from "react";
 
+import { calculateLuminance } from "../utils/colorHelpers";
+
 const Form = () => {
 	const [color, setColor] = useState("#000000");
 
@@ -30,7 +32,12 @@ const Form = () => {
 				onChange={updateColor}
 				value={color}
 			/>
-			<input type="submit" value="Submit" className="color-form-btn" style={{ backgroundColor: color }} />
+			<input
+				type="submit"
+				value="Submit"
+				className={`color-form-btn ${calculateLuminance(color) > 0.5 ? "text-dark" : "text-light"}`}
+				style={{ backgroundColor: color }}
+			/>
 		</form>
 	);
 };
