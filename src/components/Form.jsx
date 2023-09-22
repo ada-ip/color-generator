@@ -1,8 +1,9 @@
 import { useState } from "react";
+import Values from "values.js";
 
 import { calculateLuminance } from "../utils/colorHelpers";
 
-const Form = () => {
+const Form = ({ setColors }) => {
 	const [color, setColor] = useState("#000000");
 
 	const updateColor = (e) => {
@@ -12,6 +13,7 @@ const Form = () => {
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
+		setColors(new Values(color).all(10));
 	};
 
 	return (
